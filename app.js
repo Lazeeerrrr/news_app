@@ -6,11 +6,14 @@ let submit = document.querySelector('.submit_button');
 let row = document.querySelector('.container');
 let title = document.querySelector('#title');
 let about = document.querySelector('#about');
-
+let content = document.querySelector('.content');
+let error = document.querySelector('.error-text');
 
 //modal window
 btn.addEventListener('click', () => {
   modal.style.display = "block";
+  error.style.display = 'none';
+
 });
 
 span.addEventListener('click', () => {
@@ -22,6 +25,7 @@ span.addEventListener('click', () => {
 
 submit.addEventListener('click', (e) => {
   e.preventDefault();
+
 
   const blog = document.createElement("DIV");
   const blogContainer = document.createElement("DIV");
@@ -36,11 +40,24 @@ submit.addEventListener('click', (e) => {
   blog.style.margin = '10px';
   row.style.display = 'inline';
 
-  row.prepend(blog);
+
+  if (about.value === "" || title.value === "") {
+    error.style.display = "block";
+  }
+  else {
+    row.prepend(blog);
   blog.append(blogContainer);
   blogContainer.append(aboutText);
   console.log('Объект создался');
   console.log(title.value);
 
   modal.style.display = "none";
+  }
+  // row.prepend(blog);
+  // blog.append(blogContainer);
+  // blogContainer.append(aboutText);
+  // console.log('Объект создался');
+  // console.log(title.value);
+
+  // modal.style.display = "none";
 });
