@@ -13,32 +13,23 @@
     <h1 class="head-text text-white">News</h1>
   </div>
   <div class="news">
-    <!-- <div class="news__text m-10 bg-primary text-white fs-3">
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-        Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. 
-        Nulla consequat massa quis enim.
-        Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
-    </div> -->
     <div class="row">
-      <div class="col fs-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+      <div class="col fs-3"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
         Aenean commodo ligula eget dolor. Aenean massa.
         Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus.</div>
+        nascetur ridiculus mus.</p></div>
     </div>
     <div class="row">
-      <div class="col fs-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+      <div class="col fs-3"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
         Aenean commodo ligula eget dolor. Aenean massa.
         Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus.</div>
+        nascetur ridiculus mus.</p></div>
     </div>
     <div class="row">
-      <div class="col fs-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+      <div class="col fs-3"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
         Aenean commodo ligula eget dolor. Aenean massa.
         Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus.</div>
+        nascetur ridiculus mus.</p></div>
     </div>
   </div>
   <div class="add">
@@ -47,8 +38,14 @@
   <div id="my_modal" class="modal">
     <div class="content">
       <span class="close">X</span>
-      <input type="text" class="title input-group-text" id="title">
-      <input type="text" class="description input-group-text" id="about">
+      <div class="group">
+        <input type="text" class="title" id="title">
+        <label>Тема</label>
+      </div>
+      <div class="group">
+        <input type="text" class="description" id="about">
+        <label>Описание</label>
+      </div>
       <div class="submit_button">
         <button type="button" class="btn btn-outline-primary">Submit</button>
       </div>
